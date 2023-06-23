@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
+  --title-color: #34355B;
+  --txt-color: #34355bcc;
+  --btn-txt: #DCE2E9;
+  --btn-color: #7879F1;
+  font-size: 62.5%;
+  --font-title: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-color);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#container {
+  margin-top: -1.2rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  background: #fff;
+  box-shadow: 0 .2rem .4rem #0000001a;
+  border-radius: 0.6rem;
+  text-align: center;
+
+}
+
+.title {
+  margin-bottom: 1.6rem;
+  font-family: var(--font-title);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.txt {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--txt-color);
+}
+
+input, button {
+  padding: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+  height: 5.3rem;
+  font-weight: 700;
+  border: none;
+}
+
+#box {
+  margin-top: 4.8rem;
+  display: inline-flex;
+}
+
+#number {
+  width: 6.3rem;
+  background: var(--btn-txt);
+  border-radius: .4rem 0 0 .4rem;
+  color: var(--title-color);
+}
+
+#btn {
+    width: 8.2rem;
+    background: var(--btn-color);
+    border-radius: 0 .4rem  .4rem 0;
+    color: #fff;
+    cursor: pointer;
+  }
