@@ -6,13 +6,13 @@
 
 :root {
   --bg-color: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
-  --title-color: #34355B;
+  --title-color: #34355b;
   --txt-color: #34355bcc;
-  --btn-txt: #DCE2E9;
-  --btn-color: #7879F1;
+  --btn-txt: #dce2e9;
+  --btn-color: #7879f1;
   font-size: 62.5%;
-  --font-title: 'Montserrat', sans-serif;
-  font-family: 'DM Sans', sans-serif;
+  --font-title: "Montserrat", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -23,16 +23,21 @@ body {
   height: 100vh;
 }
 
+.hide {
+  display: none;
+}
+
 #container {
   margin-top: -1.2rem;
   padding: 4.8rem 6.4rem 6.4rem;
-  width: min(42.8rem, 90%);
+  width: min(43.8rem, 90%);
   background: #fff;
-  box-shadow: 0 .2rem .4rem #0000001a;
+  box-shadow: 0 0.2rem 0.4rem #0000001a;
   border-radius: 0.6rem;
   text-align: center;
-
 }
+
+/* screen 01 */
 
 .title {
   margin-bottom: 1.6rem;
@@ -48,23 +53,24 @@ body {
   color: var(--txt-color);
 }
 
-input, button {
+input,
+button {
   padding: 1.6rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   height: 5.3rem;
   font-weight: 700;
   border: none;
 }
 
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  /* input[type="number"] {
-      -moz-appearance: textfield;
-  } */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 #box {
   margin-top: 4.8rem;
@@ -74,14 +80,27 @@ input, button {
 #number {
   width: 4.3rem;
   background: var(--btn-txt);
-  border-radius: .4rem 0 0 .4rem;
+  border-radius: 0.4rem 0 0 0.4rem;
   color: var(--title-color);
 }
 
-#btn {
-    width: 8.2rem;
-    background: var(--btn-color);
-    border-radius: 0 .4rem  .4rem 0;
-    color: #fff;
-    cursor: pointer;
-  }
+.btn {
+  width: 8.2rem;
+  background: var(--btn-color);
+  border-radius: 0 .4rem .4rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* SCREEN 02 */
+
+.title02 {
+  margin-bottom: 3.3rem;
+  font-size: 2.4rem;
+  color: var(--title-color);
+}
+
+#btn-result {
+  width: min(16.6rem, 80%);
+  border-radius: .4rem .4rem .4rem .4rem;
+}

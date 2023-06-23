@@ -15,14 +15,20 @@
 
 <body>
   <main id="container">
-    <h1 class="title">Jogo da Adivinhação</h1>
-    <p class="txt">Adivinhe o número entre 0 e 10</p>
+    <section class="screen01">
+      <h1 class="title">Jogo da Adivinhação</h1>
+      <p class="txt">Adivinhe o número entre 0 e 10</p>
 
-    <span id="box">
-      <input type="number" name="" id="number">
-      <button type="button" id="btn">Tentar</button>
-    </span>
+      <span id="box">
+        <input type="number" name="" id="number">
+        <button type="button" class="btn" id="btn-verify">Tentar</button>
+      </span>
+    </section>
 
+    <section class="screen02 hide">
+      <h1 class="title02" id="result">Acertou em "X" tentativas!</h1>
+      <button type="button" class="btn" id="btn-result">Jogar novamente</button>
+    </section>
   </main>
 
   <script src="main.js"></script>
