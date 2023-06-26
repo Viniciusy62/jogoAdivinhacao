@@ -90,6 +90,11 @@ input[type="number"] {
   border-radius: 0 .4rem .4rem 0;
   color: #fff;
   cursor: pointer;
+  transition: background .4s;
+}
+
+.btn:hover {
+  background: #5c5cbb;
 }
 
 /* SCREEN 02 */
