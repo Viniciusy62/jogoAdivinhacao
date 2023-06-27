@@ -78,7 +78,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #number {
-  width: 4.3rem;
+  width: 5.3rem;
   background: var(--btn-txt);
   border-radius: 0.4rem 0 0 0.4rem;
   color: var(--title-color);
@@ -105,7 +105,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--title-color);
 }
 
-#btn-result {
+#btn-again {
   width: min(16.6rem, 80%);
   border-radius: .4rem .4rem .4rem .4rem;
 }
