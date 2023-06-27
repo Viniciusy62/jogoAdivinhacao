@@ -1,14 +1,8 @@
 const btnVerify = document.querySelector("#btn-verify");
 const btnAgain = document.querySelector("#btn-again");
+const randomNumber = Math.round(10 * Math.random());
 
-function randomNumber() {
-  const random = 10 * Math.random();
-  const numberValid = Math.round(random);
-  if (numberValid < 0) {
-    numberValid = 0;
-  }
-  return numberValid;
-}
+let score = 1
 
 function changeScreen() {
   const screen01 = document.querySelector(".screen01");
@@ -18,28 +12,28 @@ function changeScreen() {
   screen02.classList.toggle("hide");
 }
 
-function comparateNumber(num) {
+function finalResult(num) {
+  num.preventDefault();
   num = document.querySelector("#number");
-  const numberValid = randomNumber();
+
   const txtValidate = document.querySelector("#txt-validate");
   const result = document.querySelector("#result");
-
-  console.log(numberValid);
 
   if (!num.value || num.value < 0 || num.value > 10) {
     txtValidate.textContent = "*Digite um número válido";
 
-  } else if(numberValid == num.value) {
-    result.textContent = "Parabéns, você acertou!";
+  } else if(randomNumber == num.value) {
+    result.textContent = `Parabéns, você acertou em ${score} tentativas! O número é ${randomNumber}!`;
     changeScreen()
-
+    score = 1
+    
   } else {
-    result.textContent = `Infelizmente você errou, o número era ${numberValid}!`;
-    changeScreen()
-
+    txtValidate.textContent = `Infelizmente você errou, tente novamente!`;
+    score++
   }
+  console.log(score)
   num.value = "";
 }
 
-btnVerify.addEventListener("click", comparateNumber);
+btnVerify.addEventListener("click", finalResult);
 btnAgain.addEventListener("click", changeScreen);
