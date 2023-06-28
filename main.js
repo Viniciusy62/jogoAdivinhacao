@@ -12,9 +12,9 @@ function changeScreen() {
   screen02.classList.toggle("hide");
 }
 
-function finalResult(num) {
-  num.preventDefault();
-  num = document.querySelector("#number");
+function finalResult(e) {
+  e.preventDefault();
+  const num = document.querySelector("#number");
 
   const txtValidate = document.querySelector("#txt-validate");
   const result = document.querySelector("#result");
@@ -26,7 +26,7 @@ function finalResult(num) {
     result.textContent = `Parabéns, você acertou em ${score} tentativas! O número é ${randomNumber}!`;
     changeScreen()
     score = 1
-    
+    txtValidate.textContent = ""
   } else {
     txtValidate.textContent = `Infelizmente você errou, tente novamente!`;
     score++
