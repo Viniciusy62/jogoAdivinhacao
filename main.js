@@ -2,12 +2,12 @@ const btnVerify = document.querySelector("#btn-verify");
 const btnAgain = document.querySelector("#btn-again");
 const randomNumber = Math.round(10 * Math.random());
 
-let score = 1
+let score = 1;
 
 function changeScreen() {
   const screen01 = document.querySelector(".screen01");
   const screen02 = document.querySelector(".screen02");
-  
+
   screen01.classList.toggle("hide");
   screen02.classList.toggle("hide");
 }
@@ -21,17 +21,15 @@ function finalResult(e) {
 
   if (!num.value || num.value < 0 || num.value > 10) {
     txtValidate.textContent = "*Digite um número válido";
-
-  } else if(randomNumber == num.value) {
+  } else if (randomNumber == num.value) {
     result.textContent = `Parabéns, você acertou em ${score} tentativas! O número é ${randomNumber}!`;
-    changeScreen()
-    score = 1
-    txtValidate.textContent = ""
+    changeScreen();
+    score = 1;
+    txtValidate.textContent = "";
   } else {
     txtValidate.textContent = `Infelizmente você errou, tente novamente!`;
-    score++
+    score++;
   }
-  console.log(score)
   num.value = "";
 }
 

@@ -107,5 +107,5 @@ input[type="number"]::-webkit-inner-spin-button {
 
 #btn-again {
   width: min(16.6rem, 80%);
-  border-radius: .4rem .4rem .4rem .4rem;
+  border-radius: .4rem;
 }
