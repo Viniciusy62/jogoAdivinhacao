@@ -1,7 +1,6 @@
 const btnVerify = document.querySelector("#btn-verify");
 const btnAgain = document.querySelector("#btn-again");
-const randomNumber = Math.round(10 * Math.random());
-
+let randomNumber = Math.round(10 * Math.random());
 let score = 1;
 
 function changeScreen() {
@@ -26,6 +25,7 @@ function finalResult(e) {
     changeScreen();
     score = 1;
     txtValidate.textContent = "";
+    randomNumber = Math.round(10 * Math.random());
   } else {
     txtValidate.textContent = `Infelizmente você errou, tente novamente!`;
     score++;
@@ -35,3 +35,7 @@ function finalResult(e) {
 
 btnVerify.addEventListener("click", finalResult);
 btnAgain.addEventListener("click", changeScreen);
+
+//Criar uma função para usar o enter para confirmar o botão e mudar de tela, quando estiver na segunda tela
+
+//Melhorar a organização das funções e do código
