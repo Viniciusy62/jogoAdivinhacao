@@ -37,5 +37,6 @@ btnVerify.addEventListener("click", finalResult);
 btnAgain.addEventListener("click", changeScreen);
 
 //Criar uma função para usar o enter para confirmar o botão e mudar de tela, quando estiver na segunda tela
-
+//Criar uma função para usar o enter para confirmar o botão na 1ª tela
 //Melhorar a organização das funções e do código
+//Ler o número antes da confirmação e validar antes da confirmação
